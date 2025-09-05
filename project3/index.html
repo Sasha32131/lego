@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lego Shop</title>
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Google Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- SwiperJS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+</head>
+<body>
+
+  <div class="sidebar">
+    <div class="sidebar-mini">
+      <a class="sidebar-a" href="index.html">Main</a>
+      <a class="sidebar-a" href="catalog.html">Product Catalog</a>
+      <a class="sidebar-a" href="contact.html">Contacts</a>
+    </div>
+    <img style="width: 75px; height: 60px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/640px-LEGO_logo.svg.png" alt="">
+  </div>
+
+  <h3 class="h3-2">Lego online store</h3>
+  <!-- SWIPER SLIDER START -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img class="slider-img" src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/101/408/722/812/213/12/100062791749b6.jpg" alt="/"></div>
+      <div class="swiper-slide"><img class="slider-img"  src="https://avatars.mds.yandex.net/get-mpic/5220597/2a0000018a5496d450276b935554613db3f5/orig" alt="/" ></div>
+      <div class="swiper-slide"><img class="slider-img"  src="https://avatars.mds.yandex.net/get-mpic/5220597/2a0000018a5496d450276b935554613db3f5/orig" alt="/" ></div>
+
+    </div>
+
+
+
+    <!-- Пагинация -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- SWIPER SLIDER END -->
+<div class="swiper mySwiper-2">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide"><img class="slider-img-2" src="https://avatars.mds.yandex.net/get-mpic/5220597/2a0000018a5496d450276b935554613db3f5/orig" alt="/" ></div>
+    <div class="swiper-slide"><img class="slider-img-2" src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/101/408/722/812/213/12/100062791749b6.jpg" alt="/" ></div>
+    <div class="swiper-slide"><img class="slider-img-2" src="https://avatars.mds.yandex.net/get-mpic/5220597/2a0000018a5496d450276b935554613db3f5/orig" alt="/" ></div>
+    <div class="swiper-slide"><img class="slider-img-2" src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/101/408/722/812/213/12/100062791749b6.jpg" alt="/" ></div>
+    <div class="swiper-slide"><img class="slider-img-2" src="https://avatars.mds.yandex.net/get-mpic/5220597/2a0000018a5496d450276b935554613db3f5/orig" alt="/" ></div>
+    <div class="swiper-slide"><img class="slider-img-2" src="https://main-cdn.sbermegamarket.ru/big2/hlr-system/101/408/722/812/213/12/100062791749b6.jpg" alt="/" ></div>
+  </div>
+    <!-- SWIPER SLIDER END -->
+  <div class="footer">
+      <div class="content">
+    <div>
+      <h3>Lego Shop online store</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+        Expedita dolorem magni consequatur similique voluptatum culpa deleniti iste ex.
+      </p>
+    </div>
+    <div>
+      <h3>Pages</h3>
+      <ul>
+        <li>Home</li>
+        <li>Product catalog</li>
+        <li>Contacts</li>
+        <li>About the company</li>
+      </ul>
+    </div>
+  </div>
+  <div class="social">
+<a href="https://www.facebook.com/"><i class="fab fa-facebook social-icon facebook"></i></a>
+<a href="https://x.com/"><i class="fab fa-twitter social-icon twitter"></i></a>
+<a href="https://www.instagram.com/?hl=ru"><i class="fab fa-instagram social-icon instagram"></i></a>
+<a href="https://www.youtube.com/"><i class="fab fa-youtube social-icon youtube"></i></a>
+
+
+
+
+  </div>
+<div class="footer-mini" >
+    <h6 style="margin-left: 200px;">2025 Copyright text</h6>
+    <h6 >Shipping and payment</h6>
+    </div>
+  </div>
+
+  <!-- jQuery (если используешь) -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- SwiperJS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Custom JS -->
+  <script src="js/script.js"></script>
+
+  <!-- Swiper инициализация -->
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+  loop: true,
+  speed: 1000, // скорость анимации перелистывания в мс (по умолчанию 300)
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  slidesPerView: 3,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 1
+    },
+    480: {
+      slidesPerView: 1
+    }
+  }
+});
+const swiper2 = new Swiper('.mySwiper-2', {
+  loop: true,
+  speed: 800,
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination-2',
+    clickable: true,
+  },
+  slidesPerView: 4,
+  spaceBetween: 15,
+  breakpoints: {
+    1024: {
+      slidesPerView: 5
+    },
+    768: {
+      slidesPerView: 3
+    },
+    480: {
+      slidesPerView: 1
+    }
+  }
+});
+
+
+  </script>
+
+</body>
+</html>
